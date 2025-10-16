@@ -1,0 +1,26 @@
+// Animaciones (mínimo 4)
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes gentleBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* clases */
+.fade-in { animation: fadeInUp .9s ease both; }
+.slide-in-right { animation: slideInRight .9s ease both; }
+.slide-in-left { animation: slideInLeft .9s ease both; }
+.bounce-vertical { animation: gentleBounce 2s infinite; }

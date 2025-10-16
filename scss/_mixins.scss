@@ -1,0 +1,10 @@
+// mixin para breakpoints y transiciones
+@mixin respond($bp) {
+  @if $bp == sm { @media (max-width: 576px) { @content; } }
+  @else if $bp == md { @media (max-width: 768px) { @content; } }
+  @else if $bp == lg { @media (max-width: 992px) { @content; } }
+}
+
+@mixin trans($time: 0.35s) {
+  transition: all $time ease-in-out;
+}

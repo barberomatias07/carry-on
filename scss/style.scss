@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+@import 'header';
+@import 'sections';
+@import 'footer';
+
+/* global */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: $font-primary;
+  background: $lavanda;
+  color: $text-color;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  margin:0;
+}
+
+/* small helpers */
+.img-fluid{max-width:100%;height:auto}
+.lead{color:darken($lavanda,45%)}

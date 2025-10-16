@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carry On — Instituto de Inglés Online</title>
+  <meta name="description" content="Carry On - Clases de inglés online con Ornella. Cursos grupales y clases personalizadas.">
+  <meta name="keywords" content="inglés online, clases de inglés, cursos, Ornella, Carry On">
+<link rel="canonical" href="https://carryon.com/index.html"> 
+
+  <!-- Redes / OG -->
+  <meta property="og:title" content="Carry On - Instituto de Inglés Online">
+  <meta property="og:description" content="Clases en vivo, profesores nativos, grupos reducidos y acompañamiento personalizado.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS generado -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+  <!-- NAV (sticky) -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top nav-elegant" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Carry On</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">El Instituto</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="teachers.html">Profesores</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO: grande para la foto de Ornella -->
+  <header class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <div class="hero-grid">
+        <div class="hero-photo">
+          <img src="img/logo.png" alt="Ornella — profesora principal" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="hero-text">
+          <h1>Aprendé inglés con Ornella</h1>
+          <p class="lead">Clases online, personalizadas y en grupos reducidos. Horarios flexibles y material incluido.</p>
+          <div class="mt-4">
+            <a href="courses.html" class="btn btn-primary me-2 btn-cta">Ver Cursos</a>
+            <a href="contact.html" class="btn btn-outline-dark btn-cta">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección central con texto y foto de grupo (respeta tu bosquejo) -->
+  <main class="container my-5">
+    <section class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <img src="img/estudiante_conectada_a_una_clase_virtual_desde_una_computadora_50.webp" alt="Alumnos en clase online" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <h2>Clases para todos los niveles</h2>
+        <p>Ofrecemos programas pensados para principiantes, intermedios y avanzados. Los grupos son reducidos y el foco está en la comunicación.</p>
+        <p>Texto de relleno: podés cambiar estas líneas por la presentación real de Ornella y su metodología.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Tres bloques informativos (cards) -->
+  <section class="container my-5">
+    <div class="row g-4 dynamic-section">
+      <article class="col-md-4 card-article fade-in">
+        <h3>Grupos reducidos</h3>
+        <p>Máximo 6 alumnos por grupo para garantizar práctica oral.</p>
+      </article>
+      <article class="col-md-4 card-article slide-in-right">
+        <h3>Clases personalizadas</h3>
+        <p>Planes a medida: horarios y contenidos según tus necesidades (a convenir).</p>
+      </article>
+      <article class="col-md-4 card-article slide-in-left">
+        <h3>Material incluido</h3>
+        <p>Recibirás recursos, ejercicios y seguimiento semanal.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <p>© 2025 Carry On — Ornella</p>
+      <div class="footer-buttons mt-2">
+        <a class="btn btn-social instagram" href="https://www.instagram.com/english_carryon?igsh=NXI4OWt2Y2FveTFq" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-social whatsapp" href="https://wa.me/5492984785855" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Smooth scroll for anchor links -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const href = this.getAttribute('href');
+        if(href.length > 1) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

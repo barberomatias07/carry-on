@@ -1,0 +1,31 @@
+.container { max-width: $max-width; margin: 0 auto; padding: 0 1rem; }
+
+.card-article {
+  background: $white;
+  padding: 1.15rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  @include trans(0.28s);
+
+  &:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(0,0,0,0.06); }
+}
+
+/* utilities */
+.dynamic-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1.2rem; }
+
+/* oraculo-card / courses list */
+.oraculo-card, .contact-form { background: $white; padding: 1rem; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+
+/* botones CTA */
+.btn-cta {
+  background: $accent;
+  color: $white;
+  border-radius: 8px;
+  padding: .6rem 1rem;
+  font-weight:600;
+  @include trans(0.25s);
+  &:hover { transform: translateY(-4px); background: darken($accent,7%); }
+}
+
+/* evitar overflow en mobile */
+body { overflow-x: hidden; }
